@@ -6,8 +6,8 @@ const fs = require('fs')
 const path = require('path')
 const filePath = path.join('db/db.json')
 const data = fs.readFileSync(filePath, "utf-8");
-const db = JSON.parse(data);
-const router = jsonServer.router(db)
+// const db = JSON.parse(data);
+const router = jsonServer.router(data)
 
 server.use(middlewares);
 // Add this before server.use(router)
