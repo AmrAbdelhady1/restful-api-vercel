@@ -3,7 +3,7 @@ const server = jsonServer.create();
 const middlewares = jsonServer.defaults();
 
 // In-memory database
-const db = { posts: [], users: [] }; // Define your initial structure here
+const db = { posts: [], users: [], quizzes: [] }; // Define your initial structure here
 const router = jsonServer.router(db);
 
 server.use(middlewares);
